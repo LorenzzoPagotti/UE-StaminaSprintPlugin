@@ -35,7 +35,7 @@ A C++ plugin for Unreal Engine 5 that provides a modular and performant Sprint &
 All properties can be configured in the Details panel of the `StaminaComponent`.
 
 | Property | Description |
-
+| :--- | :--- |
 * | **Max Stamina** | The maximum amount of stamina the character can have. |
 * | **Stamina Drain Rate** | The amount of stamina consumed per second while sprinting. |
 * | **Stamina Regen Rate** | The amount of stamina regenerated per second when not sprinting. |
@@ -63,7 +63,7 @@ Functions available to be called from Blueprints.
 
 # Sistema Modular de Sprint e Stamina para Unreal Engine 5
 
-Um plugin C++ para a Unreal Engine 5 que fornece um sistema modular e performático de Sprint e Stamina através de um Componente de Ator (Actor Component). Este componente plug-and-play pode ser facilmente adicionado a qualquer personagem para gerenciar o consumo de stamina durante a corrida, com parâmetros facilmente configuráveis e expostos para Blueprints.
+Um plugin C++ para a Unreal Engine 5 que fornece um sistema modular e performático de Sprint e Stamina através de um Actor Component. Este componente plug-and-play pode ser facilmente adicionado a qualquer personagem para gerenciar o consumo de stamina durante a corrida, com parâmetros facilmente configuráveis e expostos para Blueprints.
 
 ---
 
