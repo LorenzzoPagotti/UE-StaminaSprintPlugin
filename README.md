@@ -36,12 +36,12 @@ All properties can be configured in the Details panel of the `StaminaComponent`.
 
 | Property | Description |
 | :--- | :--- |
-* | **Max Stamina** | The maximum amount of stamina the character can have. |
-* | **Stamina Drain Rate** | The amount of stamina consumed per second while sprinting. |
-* | **Stamina Regen Rate** | The amount of stamina regenerated per second when not sprinting. |
-* | **Min Stamina To Sprint**| The stamina threshold required to start sprinting again after it has been depleted. |
-* | **Walk Speed** | The character's `MaxWalkSpeed` when not sprinting. This should match your Character Movement settings. |
-* | **Sprint Speed** | The character's `MaxWalkSpeed` when sprinting. |
+| **Max Stamina** | The maximum amount of stamina the character can have. |
+| **Stamina Drain Rate** | The amount of stamina consumed per second while sprinting. |
+| **Stamina Regen Rate** | The amount of stamina regenerated per second when not sprinting. |
+| **Min Stamina To Sprint**| The stamina threshold required to start sprinting again after it has been depleted. |
+| **Walk Speed** | The character's `MaxWalkSpeed` when not sprinting. This should match your Character Movement settings. |
+| **Sprint Speed** | The character's `MaxWalkSpeed` when sprinting. |
 
 ---
 
@@ -50,11 +50,13 @@ All properties can be configured in the Details panel of the `StaminaComponent`.
 Functions available to be called from Blueprints.
 
 | Function | Description |
+| :--- | :--- |
+| **`StartSprinting`** | Attempts to start the sprinting action. Will fail if the character cannot sprint (e.g., not enough stamina). |
+| **`StopSprinting`** | Stops the sprinting action and resets the character's speed to the walk speed. |
+| **`GetCurrentStamina`** | `(Pure)` Returns the current stamina value. Ideal for binding to a UI progress bar. |
+| **`ConsumeStamina`** | Instantly consumes a specific amount of stamina. Useful for other actions like dodging or special abilities. |
 
-* | **`StartSprinting`** | Attempts to start the sprinting action. Will fail if the character cannot sprint (e.g., not enough stamina). |
-* | **`StopSprinting`** | Stops the sprinting action and resets the character's speed to the walk speed. |
-* | **`GetCurrentStamina`** | `(Pure)` Returns the current stamina value. Ideal for binding to a UI progress bar. |
-* | **`ConsumeStamina`** | Instantly consumes a specific amount of stamina. Useful for other actions like dodging or special abilities. |
+---
 
 <br>
 
@@ -113,9 +115,9 @@ Todas as propriedades podem ser configuradas no painel Details do `StaminaCompon
 Funções disponíveis para serem chamadas a partir de Blueprints.
 
 | Função | Descrição |
-
-* | **`StartSprinting`** | Tenta iniciar a ação de correr. Falhará se o personagem não puder correr (ex: sem stamina suficiente). |
-* | **`StopSprinting`** | Para a ação de correr e redefine a velocidade do personagem para a velocidade de caminhada. |
+| :--- | :--- |
+| **`StartSprinting`** | Tenta iniciar a ação de correr. Falhará se o personagem não puder correr (ex: sem stamina suficiente). |
+| **`StopSprinting`** | Para a ação de correr e redefine a velocidade do personagem para a velocidade de caminhada. |
 * | **`GetCurrentStamina`** | `(Pure)` Retorna o valor atual da stamina. Ideal para conectar a uma barra de progresso na UI. |
 | **`ConsumeStamina`** | Consome instantaneamente uma quantidade específica de stamina. Útil para outras ações como esquivas ou habilidades especiais. |
 
