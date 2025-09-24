@@ -118,6 +118,8 @@ Funções disponíveis para serem chamadas a partir de Blueprints.
 | :--- | :--- |
 | **`StartSprinting`** | Tenta iniciar a ação de correr. Falhará se o personagem não puder correr (ex: sem stamina suficiente). |
 | **`StopSprinting`** | Para a ação de correr e redefine a velocidade do personagem para a velocidade de caminhada. |
+| **`GetCurrentStamina`** | `(Pure)` Retorna o valor atual da stamina. Ideal para conectar a uma barra de progresso na UI. |
+| **`ConsumeStamina`** | Consome instantaneamente uma quantidade específica de stamina. Útil para outras ações como esquivas ou habilidades especiais. |
 * | **`GetCurrentStamina`** | `(Pure)` Retorna o valor atual da stamina. Ideal para conectar a uma barra de progresso na UI. |
 | **`ConsumeStamina`** | Consome instantaneamente uma quantidade específica de stamina. Útil para outras ações como esquivas ou habilidades especiais. |
 
